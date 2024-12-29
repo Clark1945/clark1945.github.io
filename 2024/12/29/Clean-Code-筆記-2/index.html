@@ -28,7 +28,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/img/clean_code.jpg">
 <meta property="article:published_time" content="2024-12-29T03:53:08.000Z">
-<meta property="article:modified_time" content="2024-12-29T06:11:59.665Z">
+<meta property="article:modified_time" content="2024-12-29T07:53:08.053Z">
 <meta property="article:author" content="Clark Liu">
 <meta property="article:tag" content="Clean Code">
 <meta property="article:tag" content="Java">
@@ -227,7 +227,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          574 words
+          610 words
         
       </span>
     
@@ -238,7 +238,7 @@
         
         
         
-          5 mins
+          6 mins
         
       </span>
     
@@ -302,7 +302,8 @@
 <h3 id="Class-Level"><a href="#Class-Level" class="headerlink" title="Class-Level"></a>Class-Level</h3><h4 id="單一職責原則-Single-Responsibility-Principle-SRP"><a href="#單一職責原則-Single-Responsibility-Principle-SRP" class="headerlink" title="單一職責原則(Single Responsibility Principle, SRP)"></a>單一職責原則(Single Responsibility Principle, SRP)</h4><p>單一職責原則主張，一個類別或一個模組應該只能有一個，而且只能有一個被修改的理由。<br>個人對這段的理解是，一個類別的職責應該是很明確的，他只該負責一件事，而需要修改類別的原因，<br>必須得是當初認為要做的那件事。 比方說有一個專門處理報表Excel輸出的類別ExcelObject，若今天需要做輸出Excel之外的事<br>，比方說：判斷格式、字串拼接、欄位驗證、給定預設值，若因為這些理由而修改了ExcelObject，就是違反了SRP。</p>
 <h5 id="凝聚力"><a href="#凝聚力" class="headerlink" title="凝聚力"></a>凝聚力</h5><p>類別中的方法，盡量讓每個變數都被使用在每一個方法中。<br>當類別失去凝聚力時，就應該將它拆開</p>
 <h4 id="開放閉合原則-Open-Closed-Principle"><a href="#開放閉合原則-Open-Closed-Principle" class="headerlink" title="開放閉合原則(Open-Closed Principle)"></a>開放閉合原則(Open-Closed Principle)</h4><p>類別應該要對擴充具備開放性，但對修改具有閉合性。</p>
-<h4 id="隔離修改"><a href="#隔離修改" class="headerlink" title="隔離修改"></a>隔離修改</h4><p>…待續</p>
+<h4 id="隔離修改"><a href="#隔離修改" class="headerlink" title="隔離修改"></a>隔離修改</h4><p>類別之間不應該實體依賴，而是依賴抽象，透過一層抽象隔離變化，責任分明且易於測試。</p>
+<p>…待續</p>
 
                 
               </div>
