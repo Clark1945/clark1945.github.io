@@ -4,6 +4,29 @@
   
   
   <entry>
+    <title>Linkedin-人資怎麼看你？</title>
+    <link href="/2024/12/30/Linkedin-%E4%BA%BA%E8%B3%87%E6%80%8E%E9%BA%BC%E7%9C%8B%E4%BD%A0%EF%BC%9F/"/>
+    <url>/2024/12/30/Linkedin-%E4%BA%BA%E8%B3%87%E6%80%8E%E9%BA%BC%E7%9C%8B%E4%BD%A0%EF%BC%9F/</url>
+    
+    <content type="html"><![CDATA[<h3 id="獵頭怎麼找到你？"><a href="#獵頭怎麼找到你？" class="headerlink" title="獵頭怎麼找到你？"></a>獵頭怎麼找到你？</h3><p>前一陣子參加了年底的<GDG Taipei>，突然有看到A開頭的獵頭公司開Linkedin講座，覺得有興趣就去聽聽看，意外的是還真的知道了一些平常不會知道的事<br>當然也可能是我涉世不深，懂得還不多，大概整理了一些東西，也歡迎分享與交流：</p><ul><li>獵頭在找尋人才時，通常都是使用Linkedin為招募者提供的後台進行搜尋。搜尋條件就主要是學經歷等等…</li><li>獵頭通常在找人才時，面對雇主的需求，經常用以下順位去找：<ul><li>Location 地點，在個人資訊頁面填入的地點會被納入人資的搜尋條件中。</li><li>Skill 技能，如果有經驗的技能，盡量放在技能欄位，好讓自己被發現。(A社獵頭表示軟體工程師不必寫軟實力)</li><li>Company 任職公司，有些公司會要求從XX公司來的人，這時公司就很重要了</li><li>KeyWords 關鍵字</li></ul></li><li>Linkedin後台，針對市場上的人才，會粗略分成三種類型，HR找人從上往下找：<ul><li>OPEN TO WORK 這是Linkedin可以開啟的狀態，求職者開啟表示主動找尋工作，同時可以限制為只有招募專員才可見。</li><li>ACTIVE TALENT 這是Linkedin用演算法分類的狀態，可以理解為活躍用戶的標籤，若是想要被分類到這一塊，要考慮：<ul><li>多多參與貼文回應</li><li>近期更新過Linkedin Profile</li></ul></li><li>REDISCOVERED CANDIDATES 非活躍用戶</li></ul></li></ul><h3 id="Linkedin-Profile-怎麼建？"><a href="#Linkedin-Profile-怎麼建？" class="headerlink" title="Linkedin Profile 怎麼建？"></a>Linkedin Profile 怎麼建？</h3><p>大致Linkedin Profile有這五個部分</p><ol><li>HeadLines&amp;Location</li><li>Experience</li><li>Skills&amp;Certification</li><li>About</li><li>Project</li></ol><p>A社獵頭表示，通常前三個符合，他們就會找你了。</p><p>有關HeadLines的寫法，可參考範例：<br><img src="/img/linkedin_headlines.png"><br>Experience的寫法，可參考範例：<br><img src="/img/linkedin_experience.png"><br>撰寫經歷要注意：</p><ul><li>至少要有三個bullet points</li><li>介紹自己使用的技術</li><li>其他關鍵字(領域、你開發什麼樣的系統等等)</li><li>量化描述成果</li></ul><p>About的寫法A社獵頭建議不要太長，約在10以內最好，如果沒想法可以參考範例：<br><img src="/img/linkedin_about.png"></p><p>其他雜圖<br><img src="/img/linkedin_extra1.png"><br><img src="/img/linkedin_extra2.png"></p><p>大約就是這樣，這篇文章沒有什麼可以讓人醍醐灌頂的內容，寫完的我可以保證，大多內容還是些老生常談，最多就能帶來一點方向性指導。<br>就這樣，祝各位求職順利。</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>Linkedin</tag>
+      
+      <tag>Head Hunter</tag>
+      
+      <tag>Resume</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Clean-Code-筆記-2</title>
     <link href="/2024/12/29/Clean-Code-%E7%AD%86%E8%A8%98-2/"/>
     <url>/2024/12/29/Clean-Code-%E7%AD%86%E8%A8%98-2/</url>
