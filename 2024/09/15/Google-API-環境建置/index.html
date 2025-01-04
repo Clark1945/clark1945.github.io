@@ -19,28 +19,29 @@
   <meta name="author" content="Clark Liu">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Clean Code的原則包含了多種面向，透過Clean Code的學習，可以使你全方位的檢視自己撰寫與他人撰寫的程式碼是否足夠整潔。以下為自己整理的Clean Code學習筆記： 變數好的變數命名應該要能夠名副其實，比方說： 1int day; 永遠比 1int expireDate; 要來得糟。   避免使用 O 0 I L 這些容易誤導、寫錯的字元 使用能唸出來的名稱，團隊溝通會使用到 使用">
+    <meta name="description" content="Google Docs API 提供了讀取、寫入、更新三種API   每個Google文件有各自專屬的documentId，如下：  💡 &#96;https:&#x2F;&#x2F;docs.google.com&#x2F;document&#x2F;d&#x2F;{**DOCUMENT_ID}**&#x2F;edit&#96;    環境設定&amp;Sample程式碼： 開發環境 Java 17 with SpringBoot &#x2F; Java 1.8 以">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Clean Code 筆記(1)">
-<meta property="og:url" content="https://clark1945.github.io/2024/12/26/Clean-Code-%E7%AD%86%E8%A8%98-1/index.html">
+<meta property="og:title" content="Google API 環境建置">
+<meta property="og:url" content="https://clark1945.github.io/2024/09/15/Google-API-%E7%92%B0%E5%A2%83%E5%BB%BA%E7%BD%AE/index.html">
 <meta property="og:site_name" content="Clark&#39;s Blog">
-<meta property="og:description" content="Clean Code的原則包含了多種面向，透過Clean Code的學習，可以使你全方位的檢視自己撰寫與他人撰寫的程式碼是否足夠整潔。以下為自己整理的Clean Code學習筆記： 變數好的變數命名應該要能夠名副其實，比方說： 1int day; 永遠比 1int expireDate; 要來得糟。   避免使用 O 0 I L 這些容易誤導、寫錯的字元 使用能唸出來的名稱，團隊溝通會使用到 使用">
+<meta property="og:description" content="Google Docs API 提供了讀取、寫入、更新三種API   每個Google文件有各自專屬的documentId，如下：  💡 &#96;https:&#x2F;&#x2F;docs.google.com&#x2F;document&#x2F;d&#x2F;{**DOCUMENT_ID}**&#x2F;edit&#96;    環境設定&amp;Sample程式碼： 開發環境 Java 17 with SpringBoot &#x2F; Java 1.8 以">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://clark1945.github.io/img/clean_code.jpg">
-<meta property="article:published_time" content="2024-12-26T12:59:45.000Z">
-<meta property="article:modified_time" content="2024-12-29T03:48:45.185Z">
+<meta property="og:image" content="https://clark1945.github.io/img/google_survey_1.png">
+<meta property="og:image" content="https://clark1945.github.io/img/google_survey_2.png">
+<meta property="og:image" content="https://clark1945.github.io/img/google_survey_3.png">
+<meta property="og:image" content="https://clark1945.github.io/img/google_survey_4.png">
+<meta property="og:image" content="https://clark1945.github.io/img/google_survey_5.png">
+<meta property="article:published_time" content="2024-09-15T04:04:43.000Z">
+<meta property="article:modified_time" content="2025-01-04T04:13:02.259Z">
 <meta property="article:author" content="Clark Liu">
-<meta property="article:tag" content="Java">
-<meta property="article:tag" content="Clean Code">
-<meta property="article:tag" content="Programming">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://clark1945.github.io/img/clean_code.jpg">
+<meta name="twitter:image" content="https://clark1945.github.io/img/google_survey_1.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>Clean Code 筆記(1) - Clark&#39;s Blog</title>
+  <title>Google API 環境建置 - Clark&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -217,7 +218,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Clean Code 筆記(1)"></span>
+            <span id="subtitle" data-typed-text="Google API 環境建置"></span>
           
         </div>
 
@@ -228,8 +229,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-12-26 20:59" pubdate>
-          December 26, 2024 pm
+        <time datetime="2024-09-15 12:04" pubdate>
+          September 15, 2024 pm
         </time>
       </span>
     
@@ -240,7 +241,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          549 words
+          507 words
         
       </span>
     
@@ -297,64 +298,56 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">Clean Code 筆記(1)</h1>
+            <h1 id="seo-header">Google API 環境建置</h1>
             
             
               <div class="markdown-body">
                 
-                <p>Clean Code的原則包含了多種面向，透過Clean Code的學習，可以使你全方位的檢視自己撰寫與他人撰寫的程式碼是否足夠整潔。<br>以下為自己整理的Clean Code學習筆記：</p>
-<h3 id="變數"><a href="#變數" class="headerlink" title="變數"></a>變數</h3><p>好的變數命名應該要能夠名副其實，比方說：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-type">int</span> day;<br></code></pre></td></tr></table></figure>
-<p>永遠比</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-type">int</span> expireDate;<br></code></pre></td></tr></table></figure>
-<p>要來得糟。</p>
-<hr>
-<ul>
-<li>避免使用 <em>O</em> <em>0</em> <em>I</em> <em>L</em> 這些容易誤導、寫錯的字元</li>
-<li>使用能唸出來的名稱，<em>團隊溝通會使用到</em></li>
-<li>使用可被搜尋到的名字 <em>除錯時會使用到</em></li>
-<li>介面與繼承，可使用 Student、StudentImpl作為命名</li>
-<li>命名應該直觀，符合開發人員的想像</li>
-<li>類別應以名詞命名、方法應以動詞命名</li>
+                <blockquote>
+<p><strong>Google Docs API 提供了讀取、寫入、更新三種API</strong></p>
+</blockquote>
+<p><img src="/img/google_survey_1.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
+<p>每個Google文件有各自專屬的documentId，如下：</p>
+<aside>
+💡 `https://docs.google.com/document/d/{**DOCUMENT_ID}**/edit`
+
+</aside>
+
+<h2 id="環境設定-Sample程式碼："><a href="#環境設定-Sample程式碼：" class="headerlink" title="環境設定&amp;Sample程式碼："></a>環境設定&amp;Sample程式碼：</h2><ul>
+<li>開發環境 Java 17 with SpringBoot &#x2F; Java 1.8 以上版本必要。</li>
+<li>套件管理 maven &#x2F; <a target="_blank" rel="noopener" href="https://gradle.org/install/">Gradle 7.0 以上版本</a></li>
 </ul>
-<hr>
-<h3 id="函式"><a href="#函式" class="headerlink" title="函式"></a>函式</h3><p>設計原則</p>
-<ul>
-<li>讓函式只做一件事，SRP。</li>
-<li>參數的數量越少越好，方便開發者了解參數對整理輸出的影響</li>
-<li>不要帶boolean進function，違背了SRP。</li>
-<li>如果要傳入多個參數，用物件包裝會更好，至少符合相同概念。</li>
-<li>輸入與指令分離，ex:判斷條件與操作物件是兩個不同層級的概念，不要放在一起</li>
-<li>不要有副作用，避免不可預料的BUG發生</li>
-<li>以try catch 取代if 判斷，減少巢狀迴圈。</li>
-</ul>
-<hr>
-<h3 id="物件與資料結構"><a href="#物件與資料結構" class="headerlink" title="物件與資料結構"></a>物件與資料結構</h3><ol>
-<li><p>抽象化設計界面</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs java">FuelTankCapacityInGallons();<br><span class="hljs-type">double</span> <span class="hljs-title function_">getGallonsOfGasoline</span><span class="hljs-params">()</span>;<br></code></pre></td></tr></table></figure>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">Vehicle</span> &#123;<br>    <span class="hljs-type">double</span> <span class="hljs-title function_">getPercentFuelRemaining</span><span class="hljs-params">()</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
-<p>採用後者的設計方式可以隱藏資料的細節。</p>
-</li>
-<li><p>資料結構的程式碼</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">class</span> <span class="hljs-title class_">NPC</span> &#123;<br>    <span class="hljs-keyword">void</span> <span class="hljs-title function_">talk</span><span class="hljs-params">(Object object)</span> &#123;<br>        <span class="hljs-keyword">if</span> (object <span class="hljs-keyword">instanceof</span> Merchant) &#123;<br>            <span class="hljs-comment">// do something</span><br>        &#125; <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (object <span class="hljs-keyword">instanceof</span> Smith) &#123;<br>            <span class="hljs-comment">// do something</span><br>        &#125; <span class="hljs-keyword">else</span> &#123;<br>            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Exception</span>(<span class="hljs-string">&quot;error&quot;</span>);<br>        &#125;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure></li>
+<ol>
+<li>在Google Cloud 專案啟用 API，如果沒有專案請新建一個。</li>
+<li>啟用Google Docs API。</li>
 </ol>
-<ul>
-<li>在NPC類別中，要擴充一個新的類別很麻煩，必須要更動所有原先相關的程式碼，以符合函式的架構</li>
-<li>在NPC類別中，新增新的方法很容易，不需更動既有程式碼</li>
-<li></li>
-</ul>
+<p><img src="/img/google_survey_2.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
+<ol>
+<li>開啟Google Cloud Console，點選「選單」 &gt; 「API 與 服務」 &gt; 「同意畫面」 &gt; User Type 選擇內部後建立。</li>
+</ol>
+<p><img src="/img/google_survey_3.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
 <ol start="2">
-<li>物件導向的程式碼<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Merchant</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">NPC</span> &#123;<br>    <span class="hljs-keyword">public</span> <span class="hljs-title function_">talk</span><span class="hljs-params">()</span> &#123;<br>        <span class="hljs-comment">// do something</span><br>    &#125;<br>&#125;<br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Smith</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">NPC</span> &#123;<br>    <span class="hljs-keyword">public</span> <span class="hljs-title function_">talk</span><span class="hljs-params">()</span> &#123;<br>        <span class="hljs-comment">// do something</span><br>    &#125;<br>&#125;<br><span class="hljs-keyword">interface</span> <span class="hljs-title class_">NPC</span> &#123;<br>    talk();<br>&#125;<br></code></pre></td></tr></table></figure></li>
+<li>輸入支援Email後建立。</li>
 </ol>
-<ul>
-<li>在NPC類別中，要寫一個新的類別很容易，不需更動既有程式碼</li>
-<li>在NPC類別中，新增新的方法很麻煩，必須要更動每一個繼承NPC的類別</li>
-</ul>
-<h3 id="例外處理"><a href="#例外處理" class="headerlink" title="例外處理"></a>例外處理</h3><ul>
-<li>視情況，選擇封裝Exception</li>
-<li>不要傳遞Null</li>
-</ul>
-<p>節錄<Clean Code> Ch1~Ch8</p>
+<p><img src="/img/google_survey_4.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
+<ol>
+<li>在Google Cloud console中，點選「選單」&gt; 「API與服務」 &gt; 「憑證」 &gt; 「建立憑證」 &gt; 「OAuth Client ID」 &gt; 應用程式類型選擇「電腦版應用程式」、命名一個憑證名稱。</li>
+</ol>
+<p><img src="/img/google_survey_5.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
+<ol>
+<li>建立完成後，需要下載憑證(<strong>credentials.json檔案)並放置到檔案的工作目錄</strong></li>
+<li>引入需要的套件</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><code class="hljs java">&lt;dependency&gt;<br>    &lt;groupId&gt;com.google.apis&lt;/groupId&gt;<br>    &lt;artifactId&gt;google-api-services-docs&lt;/artifactId&gt;<br>    &lt;version&gt;v1-rev20220609-<span class="hljs-number">2.0</span><span class="hljs-number">.0</span>&lt;/version&gt;<br>&lt;/dependency&gt;<br>&lt;dependency&gt;<br>    &lt;groupId&gt;com.google.api-client&lt;/groupId&gt;<br>    &lt;artifactId&gt;google-api-client&lt;/artifactId&gt;<br>    &lt;version&gt;<span class="hljs-number">2.0</span><span class="hljs-number">.0</span>&lt;/version&gt;<br>&lt;/dependency&gt;<br>&lt;dependency&gt;<br>    &lt;groupId&gt;com.google.oauth-client&lt;/groupId&gt;<br>    &lt;artifactId&gt;google-oauth-client-jetty&lt;/artifactId&gt;<br>    &lt;version&gt;<span class="hljs-number">1.34</span><span class="hljs-number">.1</span>&lt;/version&gt;<br>&lt;/dependency&gt;<br>&lt;dependency&gt; <span class="hljs-comment">//Optional </span><br>    &lt;groupId&gt;com.google.apis&lt;/groupId&gt;<br>    &lt;artifactId&gt;google-api-services-drive&lt;/artifactId&gt;<br>    &lt;version&gt;v3-rev20240730-<span class="hljs-number">2.0</span><span class="hljs-number">.0</span>&lt;/version&gt;<br>&lt;/dependency&gt;<br><br><span class="hljs-comment">// 若使用Gradle則是以下</span><br>dependencies &#123;<br>    implementation <span class="hljs-string">&#x27;com.google.api-client:google-api-client:2.0.0&#x27;</span><br>    implementation <span class="hljs-string">&#x27;com.google.oauth-client:google-oauth-client-jetty:1.34.1&#x27;</span><br>    implementation <span class="hljs-string">&#x27;com.google.apis:google-api-services-docs:v1-rev20220609-2.0.0&#x27;</span><br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h2 id="如果要使用其他功能，會需要Enable-其他的API"><a href="#如果要使用其他功能，會需要Enable-其他的API" class="headerlink" title="如果要使用其他功能，會需要Enable 其他的API"></a>如果要使用其他功能，會需要Enable 其他的API</h2><h1 id="參考文件："><a href="#參考文件：" class="headerlink" title="參考文件："></a>參考文件：</h1><p><a target="_blank" rel="noopener" href="https://developers.google.com/docs/api/how-tos/overview?hl=zh-tw">https://developers.google.com/docs/api/how-tos/overview?hl=zh-tw</a></p>
+<p><a target="_blank" rel="noopener" href="https://developers.google.com/docs/api/quickstart/java?hl=zh-tw">https://developers.google.com/docs/api/quickstart/java?hl=zh-tw</a></p>
+<p><a target="_blank" rel="noopener" href="https://developers.google.com/docs/api/reference/rest?hl=zh-tw">https://developers.google.com/docs/api/reference/rest?hl=zh-tw</a></p>
+<p><a target="_blank" rel="noopener" href="https://developers.google.com/docs/api/reference/rest/v1/documents/get?hl=zh-tw">https://developers.google.com/docs/api/reference/rest/v1/documents/get?hl=zh-tw</a></p>
+<p><a target="_blank" rel="noopener" href="https://developers.google.com/docs/api/reference/rest/v1/documents/batchUpdate?hl=zh-tw">https://developers.google.com/docs/api/reference/rest/v1/documents/batchUpdate?hl=zh-tw</a></p>
+<p><a target="_blank" rel="noopener" href="https://developers.google.com/docs/api/samples/output-json?hl=zh-tw">https://developers.google.com/docs/api/samples/output-json?hl=zh-tw</a></p>
+<p><a target="_blank" rel="noopener" href="https://developers.google.com/docs/api/how-tos/move-text?hl=zh-tw">https://developers.google.com/docs/api/how-tos/move-text?hl=zh-tw</a></p>
+<p><a target="_blank" rel="noopener" href="https://developers.google.com/drive/api/guides/create-file?hl=zh-tw">https://developers.google.com/drive/api/guides/create-file?hl=zh-tw</a></p>
 
                 
               </div>
@@ -363,38 +356,6 @@
             <div>
               <div class="post-metas my-3">
   
-    <div class="post-meta mr-3 d-flex align-items-center">
-      <i class="iconfont icon-category"></i>
-      
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/Software/" class="category-chain-item">Software</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-    </div>
-  
-  
-    <div class="post-meta">
-      <i class="iconfont icon-tags"></i>
-      
-        <a href="/tags/Java/" class="print-no-link">#Java</a>
-      
-        <a href="/tags/Clean-Code/" class="print-no-link">#Clean Code</a>
-      
-        <a href="/tags/Programming/" class="print-no-link">#Programming</a>
-      
-    </div>
   
 </div>
 
@@ -404,8 +365,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Clean Code 筆記(1)</div>
-      <div>https://clark1945.github.io/2024/12/26/Clean-Code-筆記-1/</div>
+      <div>Google API 環境建置</div>
+      <div>https://clark1945.github.io/2024/09/15/Google-API-環境建置/</div>
     </div>
     <div class="license-meta">
       
@@ -417,7 +378,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>Posted on</div>
-          <div>December 26, 2024</div>
+          <div>September 15, 2024</div>
         </div>
       
       
@@ -449,9 +410,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2024/12/28/hello-world/" title="Remark Page">
+                      <a href="/2024/12/22/%E7%94%A8Github-Page-Hexo-Vercel-%E5%BB%BA%E7%AB%8B%E4%BD%A0%E7%9A%84%E9%83%A8%E8%90%BD%E6%A0%BC/" title="用Github Page + Hexo + Vercel 建立你的部落格">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Remark Page</span>
+                        <span class="hidden-mobile">用Github Page + Hexo + Vercel 建立你的部落格</span>
                         <span class="visible-mobile">Previous</span>
                       </a>
                     
@@ -459,8 +420,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2024/12/24/Git-%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4%E8%88%87%E8%AA%AA%E6%98%8E/" title="Git 常用指令與說明">
-                        <span class="hidden-mobile">Git 常用指令與說明</span>
+                      <a href="/2024/06/21/%E6%97%A5%E6%9C%AC%E8%BB%9F%E9%8A%80%E9%87%91%E6%B5%81API%E7%AD%86%E8%A8%98/" title="日本軟銀金流API筆記">
+                        <span class="hidden-mobile">日本軟銀金流API筆記</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -480,8 +441,8 @@
     
       <script type="text/javascript">
         var disqus_config = function() {
-          this.page.url = 'https://clark1945.github.io/2024/12/26/Clean-Code-%E7%AD%86%E8%A8%98-1/';
-          this.page.identifier = '/2024/12/26/Clean-Code-%E7%AD%86%E8%A8%98-1/';
+          this.page.url = 'https://clark1945.github.io/2024/09/15/Google-API-%E7%92%B0%E5%A2%83%E5%BB%BA%E7%BD%AE/';
+          this.page.identifier = '/2024/09/15/Google-API-%E7%92%B0%E5%A2%83%E5%BB%BA%E7%BD%AE/';
         };
         Fluid.utils.loadComments('#disqus_thread', function() {
           var d = document, s = d.createElement('script');
